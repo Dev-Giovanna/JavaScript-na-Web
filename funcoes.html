@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Funções </title>
+</head>
+<body>
+
+    <script>
+
+        // function exibeNome(nome){
+        //  return `
+        //      Bem vindo(a)! , ${nome}
+        //  `
+        // }
+        // alert(exibeNome("Giovanna"))
+         
+
+       
+        // function exibeEstudante(nome, nota){
+        //     alert(`O nome do aluno é ${nome}. E sua nota é ${nota}`)
+        // }
+        // exibeEstudante("Giovanna", 7)
+
+//  -----------------------------------------------------------------------------
+
+        // function formataEstudante(nome, nota){
+           
+        //     const info = ` 
+            
+        //     ================================== 
+        //     Estudante: ${nome}
+
+        //     Sua nota: ${nota}
+        //     ==================================
+        //     `
+    
+        //     return info
+        // }
+        
+        // const infoEstudante = formataEstudante('Giovanna', 6)
+        // alert (infoEstudante)
+
+//  ------------------------------------------------------------------------
+
+        // function mediaNota(nota1, nota2, nota3, nota4){
+        //     return (nota1 + nota2 + nota3 + nota4)/4
+        // }
+
+//  --------------------------------------------------------------------------
+       
+        // Função Expressão (Anônima)
+        //  const calcularMedia = function (n1, n2, n3, n4) {
+        //     return (n1, n2, n3, n4)/4
+        //  }
+    
+        // Função Seta (arrow function) (Anônima)
+        // const calcularMedia2 = (n1, n2, n3, n4) => {
+        //     return (n1, n2, n3, n4)/4
+        //  }
+
+
+        //  const calcularMedia = function (n1, n2, n3, n4) => (n1, n2, n3, n4)/4
+//  --------------------------------------------------------------------------
+        
+        const negtivoOuPositivo = function (n) {
+            if (n > 0){
+                return "POSITIVO"
+            }else if (n < 0){
+                return "NEGATIVO"
+            }else{
+                return "ZERO"
+            }    
+        }
+        alert(negtivoOuPositivo(-2))
+        alert(negtivoOuPositivo(2))
+
+        const parOuImpar = (n) => {
+            if  (n%2 == 0){
+                return "PAR"
+            }else{
+                return "IMPAR"
+            }
+        }
+        alert(parOuImpar(3))
+        alert(parOuImpar(74))
+
+        const parOuImparOpTernario = (n) => {
+            return n%2 == 0 ? "PAR" : "IMPAR"
+        }
+        alert(parOuImparOpTernario(3))
+        alert(parOuImparOpTernario(74))
+
+    </script>
+</body>
+</html>

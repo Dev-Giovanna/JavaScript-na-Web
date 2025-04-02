@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> If Else </title>
+</head>
+<body>
+
+    <script>
+        const nota1 = 8
+        const nota2 = 5
+        const nota3 = 7
+        const nota4 = 3
+
+        const faltas = 5
+        const media = (nota1 + nota2 + nota3 + nota4)/4
+
+        if(media >= 7 && faltas <= 4){
+            console.log ("O aluno está APROVADO!")
+        }
+        else if ( media < 7 && media >= 5 && faltas <= 4 ){
+            console.log("O aluno está de RECUPERAÇÃO!")
+        }
+        else if ( media < 5 && faltas < 4){
+            console.log("O aluno está REPROVADO!")
+        }
+        else ( media < 5 && faltas > 4);{
+            ("O aluno está no JUBILADO!")
+        }
+            
+        
+
+    </script>
+</body>
+</html>
