@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Adiciona e remove lsita </title>
+</head>
+<body>
+    <script>
+        //              0   1   2   3
+        const notas = [10, 6.5, 8, 7.5]
+
+        alert("Notas: " + notas)
+
+        // Adiciona um elemento ao final da lista
+        notas.push(10, 7, 4) 
+
+        alert("Notas Atualizadas: " + notas)
+
+        // Remove elementos no final da lista
+        notas.pop() 
+
+        alert("Notas após remoção: " + notas)
+
+       //-------------------------------------------
+        const valor1 = parseFloat(prompt("Digite um valor: "))
+        const valor2 = parseFloat(prompt("Digite um valor: "))
+        const valor3 = parseFloat(prompt("Digite um valor: "))
+        const valor4 = parseFloat(prompt("Digite um valor: "))
+
+        const valores = []
+
+        valores.push(valor1, valor2, valor3, valor4)
+
+        alert("Os valores são: " + valores)
+        alert("E sua quantidade é: " + valores.length)
+
+    </script>
+</body>
+</html>
