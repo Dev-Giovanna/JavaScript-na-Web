@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Procurar em Listas </title>
+</head>
+<body>
+    <script>
+        // const pets = [
+        //     "Cachorro", "Gato", "Hamster"]
+
+        // alert(pets.includes("Gato"))
+        // // true or false
+
+        // alert(pets.indexOf("Gato"))
+        // // -> 1
+
+        const alunos = ['João','Juliana','Caio','Ana'];
+
+        const medias = [10, 8, 7.5, 9];
+
+        const alunosMedia = [alunos, medias];
+
+        // const ExibeNomeENota = ['João']
+
+        // alert(alunos.includes("João"))
+
+        // if(alunos.includes("João") == true){
+        //     alert(
+        //         `Aluno(a):${alunosMedia[0][0]}      
+        //         Média:${alunosMedia[1][0]}`
+        //     )
+        // }
+        // else{
+        //     alert("Estudante não  existe!")
+        // }
+
+        const ExibeNomeENota = function (aluno){
+            if(alunosMedia[0].includes(aluno)){
+               const indexAluno = alunosMedia[0].indexOf(nome)
+               const nomeAluno = alunosMedia[0][indexAluno]
+               const mediaAluno = alunosMedia[1][indexAluno]
+
+               return `Aluno: ${mediaAluno} | Média: ${mediaAluno}`
+
+            }else{
+                return `Estudante não existe!`
+            }
+        }
+
+
+        
+
+        
+
+
+
+    </script>
+</body>
+</html>

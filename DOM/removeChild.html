@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Remove Child </title>
+</head>
+<body>
+
+    <!-- <ul id="lista">
+        <li id="remover"> Item que será removido </li>
+    </ul>
+
+    <script>
+        const lista = document.getElementById("lista");
+        const item = document.getElementById("remover");
+        lista.removeChild(item);
+    </script> -->
+    
+    <ul id="lista">
+        <li id="remover"> 1 </li>
+        <li id="remover"> 2 </li>
+        <li id="remover"> 3 </li>
+        <li id="remover"> 4 </li>
+    </ul>
+
+    <script>
+        const lista = document.getElementById("lista")
+        const itens = document.querySelectorAll("li")
+        itens.forEach((element) => {
+            lista.removeChild(element)
+        })
+    </script>
+</body>
+</html>
